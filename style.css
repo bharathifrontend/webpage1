@@ -1,0 +1,118 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: 0px;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background: url(herbimage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header {
+  width: 100%;
+  margin-top: 20px;
+
+  font-family: "Times New Roman", Times, serif;
+
+  box-sizing: border-box;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.topnav {
+  display: flex;
+  height: 12%;
+}
+.logo {
+  width: 30px;
+  height: 5vh;
+  cursor: pointer;
+}
+p {
+  margin-top: 20px;
+  font-style: italic;
+  padding: 5px;
+  font-size: 20px;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav a {
+  margin-left: 60px;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+.row {
+  display: flex;
+  width: 1120px;
+
+  height: 58%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.col h1 {
+  text-align: center;
+  color: black;
+  font-style: italic;
+  text-transform: capitalize;
+  align-items: center;
+  font-size: 70px;
+  font-weight: 700;
+}
+
+/* h1 {
+  color: black;
+  font-style: italic;
+  text-transform: capitalize;
+  text-align: center;
+} */
+
+button {
+  width: 180px;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  background-color: black;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 15px;
+}
+@media screen and (max-width: 881px) {
+  .col h1 {
+    flex-basis: start;
+    text-align: center;
+    color: black;
+    font-style: italic;
+    text-transform: capitalize;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 500;
+  }
+}
